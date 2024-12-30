@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Expense Tracker</h1>
+            <nav>
+                <ul>
+                    <li class="menu-item active">Add Transaction</li>
+                    <li class="menu-item">View Transactions</li>
+                    <li class="menu-item">Summary</li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="page active" id="add-transaction">
+            <h2>Add Transaction</h2>
+            <form id="transaction-form">
+                <input type="text" id="description" placeholder="Description" required />
+                <input type="number" id="amount" placeholder="Amount" required />
+                <select id="type" required>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <button type="submit">Add Transaction</button>
+            </form>
+        </div>
+
+        <div class="page" id="view-transactions">
+            <h2>View Transactions</h2>
+            <ul id="transaction-list"></ul>
+        </div>
+
+        <div class="page" id="summary">
+            <h2>Summary</h2>
+            <div>
+                <p>Total Balance: <span id="total-balance">$0.00</span></p>
+                <p>Total Income: <span id="total-income">$0.00</span></p>
+                <p>Total Expense: <span id="total-expense">$0.00</span></p>
+                <canvas id="expenseChart" width="200" height="200"></canvas>
+            </div>
+            <button id="download-pdf">Download Transactions as PDF</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
