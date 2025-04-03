@@ -1,6 +1,6 @@
 Expense Tracker
 Overview
-The Expense Tracker is a web-based application designed to help users manage their financial transactions. It allows users to add, view, and track their income and expenses in a user-friendly interface. The application displays a summary of the total balance, income, and expenses, and provides a visual representation using a pie chart. Users can also download a PDF report of their transaction records.
+The Expense Tracker is a web-based application designed to help users manage their financial transactions. It allows users to add, view, and track their income and expenses in a user-friendly interface. The application displays a summary of the total balance, income, and expenses, and provides a visual representation using a pie chart. Users can also download a PDF report of their transaction records with date and time
 
 Features
 Track Transactions: Add income or expense transactions with descriptions and amounts.
